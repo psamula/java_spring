@@ -12,12 +12,12 @@ import java.io.IOException;
 public class DemoApplication {
 
 	public static void main(String[] args) {
-		/*try {
+		try {
 			GenerateSQL.generateSQLFile();
 		}
 		catch (IOException io) {
 			io.printStackTrace();
-		}*/
+		}
 
 		SpringApplication.run(DemoApplication.class, args);
 	}
