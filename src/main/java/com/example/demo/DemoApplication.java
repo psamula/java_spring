@@ -13,9 +13,9 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		try {
-			GenerateSQL.generateSQLFile();
+			//GenerateSQL.generateSQLFile();
 		}
-		catch (IOException io) {
+		catch (Exception io) {
 			io.printStackTrace();
 		}
 

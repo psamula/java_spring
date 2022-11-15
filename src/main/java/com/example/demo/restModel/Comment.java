@@ -1,5 +1,6 @@
 package com.example.demo.restModel;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,7 +16,9 @@ import java.time.LocalDateTime;
 public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @ApiModelProperty(hidden = true)
     private long id;
+    @ApiModelProperty(hidden = true)
     private long postId;
     private String content;
     private LocalDateTime created;
